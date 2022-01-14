@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="row m-4 p-5" action="start.html"onsubmit="return validtatelogin();">
+            <div class="col-12 mt-4 ">
+                <label for="username" style="font-size: 33px;padding-left: 60px;">username</label>
+                <input type="text" id="username" >
+                <div id="name_error"></div>
+            </div>
+            <div class="col-12">
+                <label for="userPassord" style="font-size: 33px;padding-left: 60px;">password</label>
+                <input type="password" id="userPassword">  
+                <div id="password_error"></div>
+            </div>
+            <div class="col-12">
+                <input type="submit" value="ok" id="ok">    
+                <input type="button" value="Cancel" id="cancel">
+            </div>
+            </div>
+        </form>
+        
+    <script>
+        const userName=document.getElementById("username");
+        const pasword=document.getElementById("userPassord");
+        var name_error = document.getElementById('name_error');
+        var email_error = document.getElementById('email_error');
+        var userName_session=sessionStorage.getItem("Username");
+        var password_session=sessionStorage.getItem("Password")
+       
+
+        function validtatelogin()
+        {
+            let name_value=userName.value;    
+         
+            if(name_value!= userName_session){
+                userName.classList.add("incorrect");
+                userName.focus();
+                return false;
+            }
+            if (pasword.value != password_session) {
+                pasword.classList.add("incorrect");
+                pasword.focus();
+                return false;
+            }  
+
+        }
+        function validName()
+        {
+            let name_value = userName.value;
+            if (name_value===userName_session) {
+                userName.classList.add("correct");                
+                return true;
+            }
+        }
+        function validPass(){
+            if (pasword.value === password_session)
+            pasword.classList.add("correct");           
+            return true;
+        }
+
+        // document.getElementById("cancel").addEventListener("click", () => {
+        // window.close();
+//         document.getElementById("ok").addEventListener("click", () => {
+//             validName();
+//             validPass();
+// });
+// });
+//     // sessionStorage.clear();
+//      console.log(sessionStorage.getItem("Username"));
+//      console.log(sessionStorage.getItem("Password"))
+//      console.log(sessionStorage.getItem("email"))
+//      console.log(sessionStorage.getItem("male"))
+//      console.log(sessionStorage.getItem("female"))
+    //  if(sessionStorage.getItem("male")){
+    //      document.body.style.backgroundColor="blue"
+    //  }
+    //  else if(sessionStorage.getItem("female")){
+    //     document.body.style.backgroundColor="pink"
+    //  }
+    </script>
+</body>
+</html>
