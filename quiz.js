@@ -230,11 +230,11 @@ const userName_sess=sessionStorage.getItem("Username");
 userName.innerText=`Welcome : ${userName_sess}`
 let male=sessionStorage.getItem("male");
 let female=sessionStorage.getItem("female")
-if(male){
+if(male=="true"){
     question_container.style.backgroundColor="blue";
-    // return
+  
 }
-else if(female){
+if(female=="true"){
     question_container.style.backgroundColor="pink";
 }
 
