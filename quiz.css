@@ -1,0 +1,65 @@
+.container{
+    width: 700px;
+    height: 600px;
+    background-color: rgb(179, 173, 165);
+    margin: auto;
+    border: 1px solid rgb(30, 65, 65);
+    padding: 15px;
+
+}
+header{
+    height: 100px;
+    padding: 10px;
+}
+header div{
+    float: left;
+}
+header div:first-child,
+header div:nth-child(2),
+header div:nth-child(3),
+header div:nth-child(4)
+{
+    border: 1px solid rgb(30, 65, 65);
+    width: 180px;
+    height: 30px;
+    margin-left:20px ;
+    padding: 10px;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+}
+.question-container{
+    height: 350px;
+    background-color: rgb(53, 83, 117);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: #FFF;
+    background-color: rgb(53, 83, 117);
+    padding: 3px;
+    float: right;
+
+}
+.choice-text{
+    background-color: #fff;
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+
+} 
+.grade-container{
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 200px;
+    border-radius: 50px 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.grade-container #score{
+    color: brown;
+}
