@@ -90,8 +90,8 @@ function validateEmail ()
         var gender_male=male.checked;
         var gender_fmale=female.checked;
        if(gender_fmale||gender_male){
-         sessionStorage.setItem("male",gender_fmale)
-         sessionStorage.setItem("female",gender_male);
+         sessionStorage.setItem("male",gender_male)
+         sessionStorage.setItem("female",gender_fmale);
       return true;
    } 
  }
