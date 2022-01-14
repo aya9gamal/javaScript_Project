@@ -225,6 +225,7 @@ let countDown=()=>{
     if(Minutes===0 && seconds===0)
     return window.location.assign("./end.html");
 }
+setInterval(countDown,1000);
 const userName_sess=sessionStorage.getItem("Username");
 userName.innerText=`Welcome : ${userName_sess}`
 let male=sessionStorage.getItem("male");
@@ -236,5 +237,5 @@ if(male){
 else if(female){
     question_container.style.backgroundColor="pink";
 }
-setInterval(countDown,1000);
+
 
