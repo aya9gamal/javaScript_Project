@@ -4,8 +4,6 @@ const scoreText = document.getElementById("score");
 const next = document.getElementById("next");
 const timer=document.getElementById('timer');
 const coursename= document.getElementById('coursename');
-const question_container=document.getElementById("question-container");
-const userName=document.getElementById("username");
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -225,14 +223,4 @@ let countDown=()=>{
     return window.location.assign("./end.html");
 }
 setInterval(countDown,1000);
-const userName_sess=sessionStorage.getItem("Username");
-userName.innerText=`Welcome : ${userName_sess}`
-let male=sessionStorage.getItem("male");
-let female=sessionStorage.getItem("female")
-if(male){
-    question_container.style.backgroundColor="blue";
-    // return
-}
-else if(female){
-    question_container.style.backgroundColor="pink";
-}
+
