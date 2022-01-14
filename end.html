@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='quiz.css'>
+  
+  
+</head>
+<body>
+    
+        <div class="grade-container">
+            <h1>Thank you for your Response </h1>
+            <h1>you have completed the quiz and got <span id="score"></span>/100 </h1>
+
+        </div>
+
+    <script>
+        const mostRecentScore = localStorage.getItem("mostRecentScore");
+        document.getElementById('score').innerText= mostRecentScore;
+    </script>
+</body>
+</html>
