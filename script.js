@@ -41,7 +41,7 @@ function formValidation(){
        } 
      
     var gender_male=male.checked;
-        var gender_fmale=female.checked;
+    var gender_fmale=female.checked;
        if(!(gender_fmale||gender_male)){
     alert("Please select your gender");
     return false;
@@ -89,7 +89,7 @@ function validateEmail ()
         e.preventDefault();
         var gender_male=male.checked;
         var gender_fmale=female.checked;
-       if((gender_fmale||gender_male)){
+       if(gender_fmale||gender_male){
          sessionStorage.setItem("male",gender_fmale)
          sessionStorage.setItem("female",gender_male);
       return true;
@@ -101,7 +101,7 @@ function validateEmail ()
 document.getElementById("ok").addEventListener("click",()=>{
   vaild_name();
   validateEmail ();
-  matchPassword()
-  vaild_gender()
+  matchPassword();
+  vaild_gender();
 })
 sessionStorage.clear();   

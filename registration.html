@@ -14,47 +14,34 @@
         <h2 class="mt-1">Registration Page</h2>
        <form  class="row m-4 p-5" action="login.html"  onsubmit="return formValidation();">
        
-           <div class="col-12 mt-4 ">
-            <label for="username">usename</label>
-            <input type="text" id="username" >
-            <div id="name_error"></div>
-           </div>
-       
+          
+            <label for="username" class="col-12 col-md-4">usename</label>
+            <input type="text" id="username" class="col-12 col-md-8">
+                   
 
-        <div class="col-12">
-            <label for="userPassord">password</label>
-            <input type="password" id="userPassord">  
-            <div id="password_error"></div>
-        </div>
-       
+            <label for="userPassord" class="col-12 col-md-4">password</label>
+            <input type="password" id="userPassord" class="col-12 col-md-8">  
+         
 
-        <div class="col-12">
-            <label for="conPassord">password confirmation</label>        
-            <input type="password" id="conPassord">
+        
+            <label for="conPassord" class="col-12 col-md-4">password confirmation</label>        
+            <input type="password" id="conPassord" class="col-12 col-md-8">
+ 
+       
+       
+            <label for="email" class="col-12 col-md-4">Email</label>
+            <input type="email" id="email" class="col-12 col-md-8">
+         
       
-        </div>
-       
-        <div class="col-12">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-            <div id="email_error"></div>
-        </div>
       
-        <div class="col-12">
-
-         <label for="" class="col-md-3" >Gender</label>
-       <span class="col-md-10">
-        <input type="radio" id="male" name="gender" >
+<div>
+         <label for="" class="me-5" >Gender</label>
+         <input type="radio" id="male" name="gender" >
         <label for="male" >male</label>
-       
+     
         <input type="radio" id="female" name="gender" >
         <label for="female" >female</label> 
-       </span>
-         
-    
-
-        </div>
-
+    </div>
     <div class="col-12">
         <input type="submit" value="ok" id="ok">    
     <input type="button" value="Cancel" id="cancel">

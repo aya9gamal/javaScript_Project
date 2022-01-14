@@ -25,29 +25,20 @@ h2{
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
-#username,#userPassord{
-    margin-left: 150px;
-    margin-bottom: 5px; 
-    width: 50%; 
+
+#username,#userPassord,#conPassord,#email{
+      width:100%; 
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    margin-top: 5px;
+   margin-bottom: 10px;
 }
-#conPassord{
-    margin-left: 53px;
-    margin-bottom: 5px;
-    width: 50%;  
+
+.radio{
+    width: 50px;
+  text-align: center;
 }
-#email{
-    margin-left: 180px;
-    margin-bottom: 5px;
-    width: 50%; 
-}
-/* #cancel,#ok{
-    padding: 10px;
-    color: red;
-    border:.2px solid blue ;
-    width: 160px;
-    margin-top: 40px;
-    margin-left: 100px;
-} */
 #cancel,#ok{
     font-size: 25px;
     font-weight: 500;
