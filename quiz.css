@@ -30,7 +30,7 @@ header div:nth-child(4)
 }
 .question-container{
     height: 350px;
-    background-color: rgb(53, 83, 117);
+    /* background-color: rgb(53, 83, 117); */
     padding: 10px;
     margin-bottom: 20px;
 }
