@@ -1,18 +1,14 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-
 const scoreText = document.getElementById("score");
-
 const next = document.getElementById("next");
 const timer=document.getElementById('timer');
 const coursename= document.getElementById('coursename');
-
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
 let quizQusetions={
     quizname:"javascript",
     quizTime:"30:00",
@@ -150,9 +146,7 @@ timer.innerHTML=quizQusetions.quizTime;
 
 const correctBonus = 10;
 const incorrectPenalty = -10;
-
 const maxQuestions = 10;
-
 startQuiz = () => {
     questionCounter = 0;
     score = 0;
@@ -160,8 +154,6 @@ startQuiz = () => {
     console.log (availableQuestions);
     newQuestion();
 };
-
-
 newQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= maxQuestions){
 
@@ -169,7 +161,6 @@ newQuestion = () => {
         return window.location.assign("./end.html");
 
     }
-
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -211,7 +202,6 @@ newQuestion = () => {
         score +=num;
         scoreText.innerText = score;
     }
-
 
 
 startQuiz(); 
