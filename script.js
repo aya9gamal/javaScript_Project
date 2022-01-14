@@ -85,8 +85,8 @@ function validateEmail ()
   //     return true
   //   }
   } 
-  function vaild_gender(e){
-        e.preventDefault();
+  function vaild_gender(){
+        // e.preventDefault();
         var gender_male=male.checked;
         var gender_fmale=female.checked;
        if(gender_fmale||gender_male){
