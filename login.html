@@ -68,26 +68,10 @@
             pasword.classList.add("correct");           
             return true;
         }
-
-        // document.getElementById("cancel").addEventListener("click", () => {
-        // window.close();
-//         document.getElementById("ok").addEventListener("click", () => {
-//             validName();
-//             validPass();
-// });
-// });
-//     // sessionStorage.clear();
-//      console.log(sessionStorage.getItem("Username"));
-//      console.log(sessionStorage.getItem("Password"))
-//      console.log(sessionStorage.getItem("email"))
-//      console.log(sessionStorage.getItem("male"))
-//      console.log(sessionStorage.getItem("female"))
-    //  if(sessionStorage.getItem("male")){
-    //      document.body.style.backgroundColor="blue"
-    //  }
-    //  else if(sessionStorage.getItem("female")){
-    //     document.body.style.backgroundColor="pink"
-    //  }
+        document.getElementById("cancel").addEventListener("click", () => {
+        window.history.back()});
+        
+        
     </script>
 </body>
 </html>
